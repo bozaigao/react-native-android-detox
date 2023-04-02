@@ -284,6 +284,20 @@ PODS:
   - React-jsinspector (0.69.8)
   - React-logger (0.69.8):
     - glog
+  - react-native-update (9.0.0):
+    - React
+    - React-Core
+    - react-native-update/HDiffPatch (= 9.0.0)
+    - react-native-update/RCTPushy (= 9.0.0)
+    - SSZipArchive
+  - react-native-update/HDiffPatch (9.0.0):
+    - React
+    - React-Core
+    - SSZipArchive
+  - react-native-update/RCTPushy (9.0.0):
+    - React
+    - React-Core
+    - SSZipArchive
   - React-perflogger (0.69.8)
   - React-RCTActionSheet (0.69.8):
     - React-Core/RCTActionSheetHeaders (= 0.69.8)
@@ -351,6 +365,7 @@ PODS:
     - React-logger (= 0.69.8)
     - React-perflogger (= 0.69.8)
   - SocketRocket (0.6.0)
+  - SSZipArchive (2.4.3)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -399,6 +414,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - react-native-update (from `../node_modules/react-native-update`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -429,6 +445,7 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
+    - SSZipArchive
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -470,6 +487,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-update:
+    :path: "../node_modules/react-native-update"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -522,7 +541,7 @@ SPEC CHECKSUMS:
   React: 1d76bae8d73113b202224075f0b0bd546996b328
   React-bridging: 2eb62dc8ba31194d285705cb62e24a15753aeaec
   React-callinvoker: f3cfb045a0fb185445542555d88b6acf385cbedc
-  React-Codegen: df188f78387b3547be25a6d24cda2a196875afd6
+  React-Codegen: 808e2d4d4201583ac89fb40d6862aaa26cb88999
   React-Core: 82c5392ab182252ce4ffbc16794e0e38b32ea9a1
   React-CoreModules: 4e891a6c0a59b01ca8406e041c7e49ab12e51d48
   React-cxxreact: 0dc4ba3d97839bd36d422592ddb0bdfa9940a990
@@ -530,6 +549,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 2cf8ea3753afb81dfcc386613dbbb0b5d155fb34
   React-jsinspector: 0eda09e9cf22bbb5dbb1d23143b03a31acf37d67
   React-logger: 5997ab008583826c10ffe4e1ff990363e975639d
+  react-native-update: 2b5ef06bfeaa668614c8deb7ec4d20dcf56f9278
   React-perflogger: ad1416a715d86b32f456e5d0aed99c3b52f1de37
   React-RCTActionSheet: cbf7c6a953982562418ee72a1084ff7b9447b558
   React-RCTAnimation: 33df3e25824dd7313edec28dded2745542f9352b
@@ -543,9 +563,10 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: 9df680f18497367bcf5c15b6b6406c0f2dfa2b6a
   ReactCommon: c10f046f3ef8561e7c8e7e9b9dae2ecc9ffc48ef
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   Yoga: d3820731e0ca3a4933f061ad29defaf7726e3251
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
 PODFILE CHECKSUM: 618d17df10f335f1d113daac849a7997894646b2
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.11.3
